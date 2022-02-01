@@ -1,4 +1,6 @@
-# Projet_SN2
+# SN2_Projet
+
+## Four
 
 https://fr.mathworks.com/help/physmod/simscape/ug/linearize-an-electronic-circuit.html
 
