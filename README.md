@@ -13,6 +13,20 @@ https://tutorials-raspberrypi.com/build-raspberry-pi-gps-location-navigation-dev
 
 https://www.instructables.com/Interfacing-GPS-Module-With-Raspberry-Pi/
 
+---
+
+## Email
+
+https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails
+
+---
+
+## GPS
+
+https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
+
+---
+
 
 ## Interfaces graphiques :
 
