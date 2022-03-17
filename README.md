@@ -1,5 +1,46 @@
 # SN2_Projet
 
+---
+
+### Code Arduino
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+  Serial.println("Initialisation");
+  
+  analogReference(DEFAULT);
+  pinMode(7, OUTPUT);
+}
+ 
+void loop() {
+  float tensionVide;
+  float tensionCharge;
+ 
+  digitalWrite(7, LOW);
+  delay(500);
+  tensionVide = analogRead(A0)*5.0/1023;
+ 
+  digitalWrite(7, HIGH);
+  delay(500);
+  tensionCharge = analogRead(A0)*5.0/1023;
+ 
+  Serial.print("Tension à vide = ");
+  Serial.print(tensionVide);
+  Serial.println("V");
+  Serial.print("Tension en charge = ");
+  Serial.print(tensionCharge);
+  Serial.println("V");
+  if (tensionCharge > 1.2) {
+    Serial.println("Batterie bonne");
+  } else if (tensionCharge > 1.0) {
+    Serial.println("Batterie faible");
+  } else {
+    Serial.println("Batterie à remplacer");
+  }
+}
+```
+
 ## Four
 
 https://fr.mathworks.com/help/physmod/simscape/ug/linearize-an-electronic-circuit.html
