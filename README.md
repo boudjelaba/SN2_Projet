@@ -41,10 +41,6 @@ void loop() {
 }
 ```
 
-## Four
-
-https://fr.mathworks.com/help/physmod/simscape/ug/linearize-an-electronic-circuit.html
-
 
 ## ECG
 
