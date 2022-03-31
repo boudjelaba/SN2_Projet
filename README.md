@@ -1,6 +1,18 @@
 # SN2_Projet
 
 ---
+http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
+
+
+https://roboticsbackend.com/introduction-to-wiringpi-for-raspberry-pi/
+
+
+https://www.framboise314.fr/installer-la-derniere-version-de-wiringpi-sur-raspbian-buster/
+
+
+https://www.electroniclinic.com/wiringpi-library-for-raspberry-pi-gpio-commands/
+
+---
 
 ### Code QT
 
