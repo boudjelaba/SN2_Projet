@@ -108,3 +108,8 @@ https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-
 
 https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
 
+---
+
+## XBEE Python
+
+http://www.brettdangerfield.com/post/raspberrypi_tempature_monitor_project/
