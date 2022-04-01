@@ -8,6 +8,28 @@ https://www.framboise314.fr/installer-la-derniere-version-de-wiringpi-sur-raspbi
 
 ---
 
+## ECG
+
+https://maker.pro/raspberry-pi/tutorial/how-to-use-a-gps-receiver-with-raspberry-pi-4
+
+https://tutorials-raspberrypi.com/build-raspberry-pi-gps-location-navigation-device/
+
+https://www.instructables.com/Interfacing-GPS-Module-With-Raspberry-Pi/
+
+---
+
+## Email
+
+https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails
+
+---
+
+## GPS
+
+https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
+
+---
+
 ### Code QT
 
 ```python
@@ -54,6 +76,7 @@ if __name__ == '__main__':
 
 ---
 
+
 ### Code Arduino
 
 ```cpp
@@ -92,30 +115,3 @@ void loop() {
   }
 }
 ```
-
-
-## ECG
-
-https://maker.pro/raspberry-pi/tutorial/how-to-use-a-gps-receiver-with-raspberry-pi-4
-
-https://tutorials-raspberrypi.com/build-raspberry-pi-gps-location-navigation-device/
-
-https://www.instructables.com/Interfacing-GPS-Module-With-Raspberry-Pi/
-
----
-
-## Email
-
-https://maker.pro/raspberry-pi/projects/how-to-use-the-raspberry-pi4-camera-and-pir-sensor-to-send-emails
-
----
-
-## GPS
-
-https://www.electronicwings.com/raspberry-pi/gps-module-interfacing-with-raspberry-pi
-
----
-
-## XBEE Python
-
-http://www.brettdangerfield.com/post/raspberrypi_tempature_monitor_project/
