@@ -1,6 +1,37 @@
 # SN2_Projet
 
 ---
+```python
+import numpy as np
+import time
+import matplotlib.pyplot as plt
+%matplotlib notebook
+plt.rcParams['animation.html'] = 'jshtml'
+
+fig = plt.figure()
+ax = fig.add_subplot(111)
+fig.show()
+
+i = 0
+t = np.linspace(0,2*np.pi,100)
+x, y = [], []
+
+while i<100:
+    x.append(t[i])
+    y.append(np.cos(t[i]))
+    
+    ax.plot(x, y, color='r')
+    
+    fig.canvas.draw()  
+    ax.set_xlim(0, t.max())
+    ax.set_ylim(-1.1,1.1)
+    
+    time.sleep(0.1)
+    i += 1
+
+ax.grid()
+```
+---
 
 ### Code animation graphique 
 
