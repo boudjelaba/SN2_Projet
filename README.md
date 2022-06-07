@@ -33,7 +33,7 @@ class MplCanvas(FigureCanvas):
 class Animation_plot(QtWidgets.QMainWindow):
 	def __init__(self):
 		QtWidgets.QMainWindow.__init__(self)
-		self.ui = uic.loadUi('/Users/kamalboudjelaba/Desktop/TestAnimeQt/mainVsupp.ui',self)
+		self.ui = uic.loadUi('Chemin/mainVsupp.ui',self)
 		self.resize(888, 600)
 		self.threadpool = QtCore.QThreadPool()	
 		self.devices_list= []
