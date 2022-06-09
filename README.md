@@ -1,5 +1,57 @@
 # SN2_Projet
 
+## Code 0
+
+```python
+import sys
+import random
+import matplotlib
+matplotlib.use('Qt5Agg')
+
+from PyQt5 import QtCore, QtWidgets
+
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.figure import Figure
+import numpy as np
+
+class MplCanvas(FigureCanvas):
+    def __init__(self, parent=None, width=5, height=4, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+        self.axes = fig.add_subplot(111)
+        super(MplCanvas, self).__init__(fig)
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self, *args, **kwargs):
+        super(MainWindow, self).__init__(*args, **kwargs)
+
+        self.canvas = MplCanvas(self, width=5, height=4, dpi=100)
+        self.setCentralWidget(self.canvas)
+
+        freq_echant = 40
+        t_fenetre = 6
+        n_data = freq_echant*t_fenetre
+        self.xdata = np.arange(0, t_fenetre, 1/freq_echant)
+        self.ydata = [np.exp(-self.xdata[i]) for i in range(n_data)]
+        self.update_plot()
+
+        self.show()
+
+        self.timer = QtCore.QTimer()
+        self.timer.setInterval(1000/freq_echant)
+        self.timer.timeout.connect(self.update_plot)
+        self.timer.start()
+
+    def update_plot(self):
+        self.ydata = self.ydata[1:] + [random.random()]
+        self.canvas.axes.cla()
+        self.canvas.axes.plot(self.xdata, self.ydata, 'r')
+        self.canvas.draw()
+
+app = QtWidgets.QApplication(sys.argv)
+w = MainWindow()
+app.exec_()
+```
+
 ---
 ```python
 import numpy as np
