@@ -1,5 +1,15 @@
 # SN2_Projet
 
+```python
+import urllib.parse
+
+cherch = "xyz.csv"
+url1 = 'https://google.com/'
+params1 = {'': cherch}
+url2= url1 + urllib.parse.urlencode(params1)
+print(url2)
+```
+
 ## Code 0
 
 ```python
