@@ -1,3 +1,5 @@
+[Calcul de panneau solaire et de batterie - le guide complet – Sunslice](https://sunslice-solar.com/blogs/stay-charged/calcul-de-panneau-solaire-et-de-batterie-le-guide-complet)
+
 # SN2_Projet
 
 ```python
