@@ -1,5 +1,23 @@
 [Calcul de panneau solaire et de batterie - le guide complet – Sunslice](https://sunslice-solar.com/blogs/stay-charged/calcul-de-panneau-solaire-et-de-batterie-le-guide-complet)
 
+---
+
+```python
+	   	self.ui.search_btn.clicked.connect(
+            	lambda: QtGui.QDesktopServices.openUrl(QUrl(self.recherche()))
+        	)
+        	self.ui.search_lineEdit.returnPressed.connect(
+            lambda: QtGui.QDesktopServices.openUrl(QUrl(self.recherche()))
+        	)
+
+	def recherche(self):
+        cherch = self.ui.search_lineEdit.text()
+        url1 = 'https://google.com/search?q'
+        params1 = {'': cherch}
+        url2 = url1 + urllib.parse.urlencode(params1)
+        return url2
+```
+---
 
 ```python
 import numpy as np
