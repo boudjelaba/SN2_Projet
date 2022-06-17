@@ -23,7 +23,6 @@ ax.set_ylabel('Amplitude')
 plt.title('ECG : Nom : '+Nom+', Age : '+str(Age)+', Position GPS : '+str(position1)+', '+str(position2))
 ax.legend()
 
-# save plot to file
 fig.savefig('/chemin/ma_figure.png')
 ```
 
