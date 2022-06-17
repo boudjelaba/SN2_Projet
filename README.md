@@ -14,16 +14,19 @@ Nom = 'Carnus'
 position1 = '100.12N'
 position2 = '10.12W'
 
-
 fig = plt.figure()
 ax = plt.subplot(111)
 ax.plot(x, y, label=r'$y = sin(\omega t)$')
 ax.set_xlabel('Temps')
 ax.set_ylabel('Amplitude')
+plt.grid()
 plt.title('ECG : Nom : '+Nom+', Age : '+str(Age)+', Position GPS : '+str(position1)+', '+str(position2))
 ax.legend()
 
-fig.savefig('/chemin/ma_figure.png')
+fig.savefig('/Chemin/ma_figure.png')
+#fig.savefig('/Chemin/ma_figure1.pdf')
+#fig.savefig('/Chemin/ma_figure3.svg')
+fig.savefig('/Chemin/ma_figure4.jpg',edgecolor ='w', facecolor ="g",dpi=300) 
 ```
 
 ---
