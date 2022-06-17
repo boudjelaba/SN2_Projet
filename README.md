@@ -1,6 +1,33 @@
 [Calcul de panneau solaire et de batterie - le guide complet – Sunslice](https://sunslice-solar.com/blogs/stay-charged/calcul-de-panneau-solaire-et-de-batterie-le-guide-complet)
 
 ---
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(0,2*np.pi,0.1)
+y = np.sin(x)
+
+Age = 20
+Nom = 'Carnus'
+position1 = '100.12N'
+position2 = '10.12W'
+
+
+fig = plt.figure()
+ax = plt.subplot(111)
+ax.plot(x, y, label=r'$y = sin(\omega t)$')
+ax.set_xlabel('Temps')
+ax.set_ylabel('Amplitude')
+plt.title('ECG : Nom : '+Nom+', Age : '+str(Age)+', Position GPS : '+str(position1)+', '+str(position2))
+ax.legend()
+
+# save plot to file
+fig.savefig('/chemin/ma_figure.png')
+```
+
+---
 
 ```python
 	   	self.ui.search_btn.clicked.connect(
